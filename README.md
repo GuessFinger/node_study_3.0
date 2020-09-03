@@ -107,3 +107,8 @@ cmd  然后 node
 
 - 如果想要了解的话 请查看http://latentflip.com/loupe 里面有演示执行的过程
 - 如果还是不清楚的话  请查看15-node.js视屏 老师讲解的很明白
+
+
+error-first 错误优先   fs.writeFile fs.readFile 后面的callback函数里面的参数  error 都是在第一个位置 所以你懂的
+
+

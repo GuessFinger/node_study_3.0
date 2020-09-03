@@ -4,7 +4,7 @@
 // 实现文件写入操作
 
 const fs = require('fs');
-const message = "hello world";
+const message = "hello world 你好 世界";
 
 
 // fs.writeFile(file,data[,options],callback)
@@ -25,5 +25,27 @@ fs.writeFile('./hello.txt',message,'utf-8',function (response) {
 });
 
 
+// 读取文件
+// fs.readFile(file[,options],callback)
+// file 文件名称
+// options 编码格式
+// callback有两个参数  一个是error 另一个是data
 
+fs.readFile('./hello.txt', function (error,data) {
+    if (error) {
+        throw error;
+    }
+    // data的数据类型是Buffer对象  里面保存的是一个一个字节  如果想要获取里面的String
+    console.log(data);
+    //  我们可以把Buffer对象转换的String  里面传的参数是编码  默认是utf8  老师建议我们把需要的编码格式添加上
+    console.log(data.toString());
+    console.log(data.toString("utf8"));
+});
 
+// 读取文件第二个参数 就是文字的编码格式
+fs.readFile('./hello.txt', 'utf8', function (error,data) {
+    if (error) {
+        throw error;
+    }
+    console.log(data.toString());
+});
