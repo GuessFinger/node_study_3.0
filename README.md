@@ -111,4 +111,11 @@ cmd  然后 node
 
 error-first 错误优先   fs.writeFile fs.readFile 后面的callback函数里面的参数  error 都是在第一个位置 所以你懂的
 
+- try catch 只能捕获同步操作的异常 不能捕获异步操作的异常  一般我们是通过回调函数里面的信息进行判断的
 
+- 在请求服务器的时候 请求的url它其实就是一个标识  这个的主要意思就是不是根据你请求的路径的后缀去判断返回什么(有可能你请求xxx.css
+ 我们给你返回一个index.html文件)
+ 
+- request和response
+- 获取用户请求的相关信息 我们都可以用request进行获取  
+- 凡是需要向客户端响应的操作 我们都可以用response进行获取
