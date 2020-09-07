@@ -119,3 +119,38 @@ error-first 错误优先   fs.writeFile fs.readFile 后面的callback函数里�
 - request和response
 - 获取用户请求的相关信息 我们都可以用request进行获取  
 - 凡是需要向客户端响应的操作 我们都可以用response进行获取
+
+NPM node package manage  一般我们安装好node已经 就自动已经安装npm了
+- 更新最新的npm 
+npm install npm@latest -g  (后面的-g 表示的是全局安装 全局安装的意思是 安装好这个模块 你就可以把这个模块当做命令行使用了
+不是说，你执行完命令后  在项目中就不用再进行安装了)
+
+只有能通过  require 加载的模块  才是模块
+
+package.json、package-lock.json 文件介绍
+元数据：描述自己的数据(比如拿到的档案信息)
+
+
+package.json 
+- 是一个包说明文件，用来管理组织一个包
+- 是一个json格式的文件
+- 位于当前项目的根目录
+
+常见的项有哪些？
+- name (包的名称)   必须项
+- version (版本)   必须项
+- description(包描述
+- main(包的入口文件 从main字段中指定那个js文件开始执行)
+- dependencies(当前包依赖的其他包)
+
+怎么创建package.json文件
+npm init命令 或者 npm init -y  或者 npm init -yes  或者手动创建  (老版本 创建的时候不要包含大写字母 也不要包含中文字符)
+
+package-lock.json (是npm5+ 以上才会有的这个文件)
+1. 安装之后锁定包的版本，手动更改package.json文件安装将不会更新包，想要更新只能使用 npm install xxx@1.0.0 --save
+ 这种方式来进行版本更新package-lock.json 文件才可以
+2. 加快了npm install 的速度，因为 package-lock.json 文件中已经记录了整个 node_modules 
+文件夹的树状结构，甚至连模块的下载地址都记录了，再重新安装的时候只需要直接下载文件即可
+
+ 
+

@@ -28,9 +28,6 @@ http.createServer(function (req, res) {
     // 该方法会通知服务器 所有的响应头和响应主体都已经被发送了 即服务器将视为已完成
     // 如果想要响应数据的话 data 必须是 string /Buffer
 
-
-
-
     res.end('65');
 
 }).listen(8880, function () {
