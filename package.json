@@ -1,0 +1,25 @@
+{
+  "name": "node_study_3.0",
+  "version": "1.0.0",
+  "description": "- 2020年8月31日23:31:04\r - 我也是醉了，这个node_study_3.0  说明这个已经是第三次鼓起勇气去学习node了  之前的学习都是\r 半途而废 这次是有计划的 争取完完整整的学习一下node",
+  "main": "index.js",
+  "dependencies": {
+    "mime": "^2.4.6",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuessFinger/node_study_3.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuessFinger/node_study_3.0/issues"
+  },
+  "homepage": "https://github.com/GuessFinger/node_study_3.0#readme"
+}
